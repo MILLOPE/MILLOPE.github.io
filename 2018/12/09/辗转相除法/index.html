@@ -6,15 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018 | MILLOPE&#39;s Blog</title>
+  <title>辗转相除法 | MILLOPE&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="MILLOPE&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+  <meta name="description" content="辗转相除法， 又名欧几里德算法（Euclidean algorithm），是求最大公约数的一种方法。它的具体做法是：用较小数除较大数，再用出现的余数（第一余数）去除除数，再用出现的余数（第二余数）去除第一余数，如此反复，直到最后余数是0为止。如果是求两个数的最大公约数，那么最后的除数就是这两个数的最大公约数。另一种求两数的最大公约数的方法是更相减损法。 原理两个数的最大公约数是指能同时整除它们的最">
+<meta property="og:type" content="article">
+<meta property="og:title" content="辗转相除法">
+<meta property="og:url" content="http://yoursite.com/2018/12/09/辗转相除法/index.html">
 <meta property="og:site_name" content="MILLOPE&#39;s Blog">
+<meta property="og:description" content="辗转相除法， 又名欧几里德算法（Euclidean algorithm），是求最大公约数的一种方法。它的具体做法是：用较小数除较大数，再用出现的余数（第一余数）去除除数，再用出现的余数（第二余数）去除第一余数，如此反复，直到最后余数是0为止。如果是求两个数的最大公约数，那么最后的除数就是这两个数的最大公约数。另一种求两数的最大公约数的方法是更相减损法。 原理两个数的最大公约数是指能同时整除它们的最">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181108125111789.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NDkzODQw,size_16,color_FFFFFF,t_70">
+<meta property="og:updated_time" content="2018-12-09T06:09:06.901Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MILLOPE&#39;s Blog">
+<meta name="twitter:title" content="辗转相除法">
+<meta name="twitter:description" content="辗转相除法， 又名欧几里德算法（Euclidean algorithm），是求最大公约数的一种方法。它的具体做法是：用较小数除较大数，再用出现的余数（第一余数）去除除数，再用出现的余数（第二余数）去除第一余数，如此反复，直到最后余数是0为止。如果是求两个数的最大公约数，那么最后的除数就是这两个数的最大公约数。另一种求两数的最大公约数的方法是更相减损法。 原理两个数的最大公约数是指能同时整除它们的最">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20181108125111789.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NDkzODQw,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="MILLOPE&#39;s Blog" type="application/atom+xml">
   
@@ -150,103 +156,161 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-辗转相除法" class="article article-type-post " itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      辗转相除法
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/12/09/辗转相除法/" class="archive-article-date">
+
+        
+        <a href="/2018/12/09/辗转相除法/" class="archive-article-date">
   	<time datetime="2018-12-09T06:08:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-09</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/12/09/辗转相除法/">辗转相除法</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>辗转相除法， 又名欧几里德算法（Euclidean algorithm），是求最大公约数的一种方法。它的具体做法是：用较小数除较大数，再用出现的余数（第一余数）去除除数，再用出现的余数（第二余数）去除第一余数，如此反复，直到最后余数是0为止。如果是求两个数的最大公约数，那么最后的除数就是这两个数的最大公约数。<br>另一种求两数的最大公约数的方法是更相减损法。</p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>两个数的最大公约数是指能同时整除它们的最大正整数。 [1]<br>设两数为a、b(a≥b)，求a和b最大公约数  的步骤如下：<br>(1)用a除以b(a≥b)，得  。<br>(2)若  ，则  ；<br>(3)若  ，则再用b除以  ，得  .<br>(4)若  ，则  ；若  ，则继续用  除以  ，……，如此下去，直到能整除为止。<br>其最后一个余数为0的除数即为  的最大公约数。</p>
+<h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p><img src="https://img-blog.csdnimg.cn/20181108125111789.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NDkzODQw,size_16,color_FFFFFF,t_70" alt=""></p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;bits/stdc++.h&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">inline int read()</span><br><span class="line">&#123;</span><br><span class="line">	int s = 0, w = 1;</span><br><span class="line">	char ch = getchar();</span><br><span class="line">	while(ch &lt; &apos;0&apos; || ch &gt; &apos;9&apos;) </span><br><span class="line">	&#123;</span><br><span class="line">		if(ch == &apos;-&apos;) w = -1;</span><br><span class="line">		ch = getchar();</span><br><span class="line">	&#125;</span><br><span class="line">	while(ch &gt;= &apos;0&apos; &amp;&amp; ch &lt;= &apos;9&apos;)</span><br><span class="line">	&#123;</span><br><span class="line">		s = (s &lt;&lt; 1) + (s &lt;&lt; 3) + ch - &apos;0&apos;;</span><br><span class="line">		ch = getchar();</span><br><span class="line">	&#125;</span><br><span class="line">	return s * w;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int x, y;</span><br><span class="line">int m, n;</span><br><span class="line">int c, d;</span><br><span class="line">int YS;</span><br><span class="line"></span><br><span class="line">int work(int a, int b)</span><br><span class="line">&#123;</span><br><span class="line">	m = max(a, b);</span><br><span class="line">	n = min(a, b);</span><br><span class="line">	c = m / n;</span><br><span class="line">	d = m % n;</span><br><span class="line">	if(d == 0)</span><br><span class="line">	&#123;</span><br><span class="line">		return n;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		work(b, d);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	x = read();</span><br><span class="line">	y = read();</span><br><span class="line">	YS = work(x, y);</span><br><span class="line">	cout &lt;&lt; YS &lt;&lt; endl;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>简化版</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int gcd(int a, int b)</span><br><span class="line">&#123;</span><br><span class="line">	if(max(a, b) % min(a, b) == 0) return min(a, b);</span><br><span class="line">	else gcd(min(a, b), max(a, b) % min(a, b));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/12/09/辗转相除法/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/12/09/树状数组1/" class="archive-article-date">
-  	<time datetime="2018-12-09T06:06:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-09</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/12/09/树状数组1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">树状数组1</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/12/09/树状数组1/">树状数组1</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-pst">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/12/07/FLOYD/" class="archive-article-date">
-  	<time datetime="2018-12-07T12:55:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/12/07/FLOYD/">Floyd</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -272,8 +336,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
