@@ -108,26 +108,26 @@
 
 
 
-  <meta name="description" content="辗转相除法， 又名欧几里德算法（Euclidean algorithm），是求最大公约数的一种方法。它的具体做法是：用较小数除较大数，再用出现的余数（第一余数）去除除数，再用出现的余数（第二余数）去除第一余数，如此反复，直到最后余数是0为止。如果是求两个数的最大公约数，那么最后的除数就是这两个数的最大公约数。另一种求两数的最大公约数的方法是更相减损法。 原理两个数的最大公约数是指能同时整除它们的最">
+  <meta name="description" content="树状数组定义树状数组顾名思义它是树状的数组百度：树状数组(Binary Indexed Tree(B.I.T), Fenwick Tree)是一个查询和修改复杂度都为log(n)的数据结构。 树状数组常用操作一、神奇的lowbit 假设数组a[1..n]，那么查询a[1]+…+a[n]的时间是log级别的，而且是一个在线的数据结构，支持随时修改某个元素的值，复杂度也为log级别。来观察这个图：令这">
 <meta property="og:type" content="article">
-<meta property="og:title" content="辗转相除法">
-<meta property="og:url" content="http://yoursite.com/2018/12/09/辗转相除法/index.html">
+<meta property="og:title" content="树状数组（一）">
+<meta property="og:url" content="http://yoursite.com/2018/12/12/树状数组（一）/index.html">
 <meta property="og:site_name" content="MILLOPE&#39;s Blog">
-<meta property="og:description" content="辗转相除法， 又名欧几里德算法（Euclidean algorithm），是求最大公约数的一种方法。它的具体做法是：用较小数除较大数，再用出现的余数（第一余数）去除除数，再用出现的余数（第二余数）去除第一余数，如此反复，直到最后余数是0为止。如果是求两个数的最大公约数，那么最后的除数就是这两个数的最大公约数。另一种求两数的最大公约数的方法是更相减损法。 原理两个数的最大公约数是指能同时整除它们的最">
+<meta property="og:description" content="树状数组定义树状数组顾名思义它是树状的数组百度：树状数组(Binary Indexed Tree(B.I.T), Fenwick Tree)是一个查询和修改复杂度都为log(n)的数据结构。 树状数组常用操作一、神奇的lowbit 假设数组a[1..n]，那么查询a[1]+…+a[n]的时间是log级别的，而且是一个在线的数据结构，支持随时修改某个元素的值，复杂度也为log级别。来观察这个图：令这">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20181108125111789.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NDkzODQw,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2018-12-09T06:09:06.901Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20181212170346952.jpg">
+<meta property="og:updated_time" content="2018-12-12T09:15:35.793Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="辗转相除法">
-<meta name="twitter:description" content="辗转相除法， 又名欧几里德算法（Euclidean algorithm），是求最大公约数的一种方法。它的具体做法是：用较小数除较大数，再用出现的余数（第一余数）去除除数，再用出现的余数（第二余数）去除第一余数，如此反复，直到最后余数是0为止。如果是求两个数的最大公约数，那么最后的除数就是这两个数的最大公约数。另一种求两数的最大公约数的方法是更相减损法。 原理两个数的最大公约数是指能同时整除它们的最">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20181108125111789.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NDkzODQw,size_16,color_FFFFFF,t_70">
+<meta name="twitter:title" content="树状数组（一）">
+<meta name="twitter:description" content="树状数组定义树状数组顾名思义它是树状的数组百度：树状数组(Binary Indexed Tree(B.I.T), Fenwick Tree)是一个查询和修改复杂度都为log(n)的数据结构。 树状数组常用操作一、神奇的lowbit 假设数组a[1..n]，那么查询a[1]+…+a[n]的时间是log级别的，而且是一个在线的数据结构，支持随时修改某个元素的值，复杂度也为log级别。来观察这个图：令这">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20181212170346952.jpg">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/12/09/辗转相除法/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/12/树状数组（一）/">
 
 
 
@@ -137,7 +137,7 @@
   };
 </script>
 
-  <title>辗转相除法 | MILLOPE's Blog</title>
+  <title>树状数组（一） | MILLOPE's Blog</title>
   
 
 
@@ -319,7 +319,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/09/辗转相除法/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/12/树状数组（一）/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="MILLOPE">
@@ -336,7 +336,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">辗转相除法
+          <h1 class="post-title" itemprop="name headline">树状数组（一）
               
             
           </h1>
@@ -361,7 +361,7 @@
                 
               
 
-              <time title="创建时间：2018-12-09 14:08:35 / 修改时间：14:09:06" itemprop="dateCreated datePublished" datetime="2018-12-09T14:08:35+08:00">2018-12-09</time>
+              <time title="创建时间：2018-12-12 17:12:45 / 修改时间：17:15:35" itemprop="dateCreated datePublished" datetime="2018-12-12T17:12:45+08:00">2018-12-12</time>
             
 
             
@@ -406,12 +406,16 @@
       
 
       
-        <p>辗转相除法， 又名欧几里德算法（Euclidean algorithm），是求最大公约数的一种方法。它的具体做法是：用较小数除较大数，再用出现的余数（第一余数）去除除数，再用出现的余数（第二余数）去除第一余数，如此反复，直到最后余数是0为止。如果是求两个数的最大公约数，那么最后的除数就是这两个数的最大公约数。<br>另一种求两数的最大公约数的方法是更相减损法。</p>
-<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>两个数的最大公约数是指能同时整除它们的最大正整数。 [1]<br>设两数为a、b(a≥b)，求a和b最大公约数  的步骤如下：<br>(1)用a除以b(a≥b)，得  。<br>(2)若  ，则  ；<br>(3)若  ，则再用b除以  ，得  .<br>(4)若  ，则  ；若  ，则继续用  除以  ，……，如此下去，直到能整除为止。<br>其最后一个余数为0的除数即为  的最大公约数。</p>
-<h2 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h2><p><img src="https://img-blog.csdnimg.cn/20181108125111789.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NDkzODQw,size_16,color_FFFFFF,t_70" alt=""></p>
-<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;bits/stdc++.h&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">inline int read()</span><br><span class="line">&#123;</span><br><span class="line">	int s = 0, w = 1;</span><br><span class="line">	char ch = getchar();</span><br><span class="line">	while(ch &lt; &apos;0&apos; || ch &gt; &apos;9&apos;) </span><br><span class="line">	&#123;</span><br><span class="line">		if(ch == &apos;-&apos;) w = -1;</span><br><span class="line">		ch = getchar();</span><br><span class="line">	&#125;</span><br><span class="line">	while(ch &gt;= &apos;0&apos; &amp;&amp; ch &lt;= &apos;9&apos;)</span><br><span class="line">	&#123;</span><br><span class="line">		s = (s &lt;&lt; 1) + (s &lt;&lt; 3) + ch - &apos;0&apos;;</span><br><span class="line">		ch = getchar();</span><br><span class="line">	&#125;</span><br><span class="line">	return s * w;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int x, y;</span><br><span class="line">int m, n;</span><br><span class="line">int c, d;</span><br><span class="line">int YS;</span><br><span class="line"></span><br><span class="line">int work(int a, int b)</span><br><span class="line">&#123;</span><br><span class="line">	m = max(a, b);</span><br><span class="line">	n = min(a, b);</span><br><span class="line">	c = m / n;</span><br><span class="line">	d = m % n;</span><br><span class="line">	if(d == 0)</span><br><span class="line">	&#123;</span><br><span class="line">		return n;</span><br><span class="line">	&#125;</span><br><span class="line">	else</span><br><span class="line">	&#123;</span><br><span class="line">		work(b, d);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	x = read();</span><br><span class="line">	y = read();</span><br><span class="line">	YS = work(x, y);</span><br><span class="line">	cout &lt;&lt; YS &lt;&lt; endl;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>简化版</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int gcd(int a, int b)</span><br><span class="line">&#123;</span><br><span class="line">	if(max(a, b) % min(a, b) == 0) return min(a, b);</span><br><span class="line">	else gcd(min(a, b), max(a, b) % min(a, b));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h2 id="树状数组定义"><a href="#树状数组定义" class="headerlink" title="树状数组定义"></a>树状数组定义</h2><p><strong><del>树状数组顾名思义它是树状的数组</del></strong><br>百度：树状数组(Binary Indexed Tree(B.I.T), Fenwick Tree)是一个查询和修改复杂度都为log(n)的数据结构。</p>
+<h2 id="树状数组常用操作"><a href="#树状数组常用操作" class="headerlink" title="树状数组常用操作"></a>树状数组常用操作</h2><h3 id="一、神奇的lowbit"><a href="#一、神奇的lowbit" class="headerlink" title="一、神奇的lowbit"></a>一、神奇的lowbit</h3><p><img src="https://img-blog.csdnimg.cn/20181212170346952.jpg" alt="树状数组图"></p>
+<p>假设数组a[1..n]，那么查询a[1]+…+a[n]的时间是log级别的，而且是一个在线的数据结构，支持随时修改某个元素的值，复杂度也为log级别。<br>来观察这个图：<br>令这棵树的结点编号为C1，C2…Cn。令每个结点的值为这棵树的值的总和，那么容易发现：<br>C1 = A1<br>C2 = A1 + A2<br>C3 = A3<br>C4 = A1 + A2 + A3 + A4<br>C5 = A5<br>C6 = A5 + A6<br>C7 = A7<br>C8 = A1 + A2 + A3 + A4 + A5 + A6 + A7 + A8<br>…<br>C16 = A1 + A2 + A3 + A4 + A5 + A6 + A7 + A8 + A9 + A10 + A11 + A12 + A13 + A14 + A15 + A16</p>
+<p>==那么就有了一个有趣的性质==</p>
+<p>设节点编号为x，那么这个节点管辖的区间为2^k（其中k为x二进制末尾0的个数）个元素。因为这个区间最后一个元素必然为Ax，<br>所以很明显：Cn = A(n – 2^k + 1) + … + An</p>
+<p>那么lowbit操作就显而易见了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">inline int lowbit(int k) &#123;</span><br><span class="line">	return k &amp; -k;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="二、单点修改"><a href="#二、单点修改" class="headerlink" title="二、单点修改"></a>二、单点修改</h3><p>由于在树状数组中改变一个点会牵动所有管辖他的店那么在修改时就需要lowbit了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">inline void add(int x, int k) &#123; //x要修改的那个数， k为要加的值</span><br><span class="line">	while(x &lt;= n) &#123;</span><br><span class="line">		c[x] += k;</span><br><span class="line">		x += lowbit(x);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="三、求和操作"><a href="#三、求和操作" class="headerlink" title="三、求和操作"></a>三、求和操作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">inline int ask(int k) &#123;</span><br><span class="line">	int ans = 0;</span><br><span class="line">	while(k) &#123;</span><br><span class="line">		ans += s[k];</span><br><span class="line">		k -= lowbit(k);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -442,15 +446,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/12/10/Floyd算法/" rel="next" title="Floyd算法">
+                <i class="fa fa-chevron-left"></i> Floyd算法
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/09/线性筛/" rel="prev" title="线性筛">
-                线性筛 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -588,7 +592,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#原理"><span class="nav-number">1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#证明"><span class="nav-number">2.</span> <span class="nav-text">证明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码实现"><span class="nav-number">3.</span> <span class="nav-text">代码实现</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#树状数组定义"><span class="nav-number">1.</span> <span class="nav-text">树状数组定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#树状数组常用操作"><span class="nav-number">2.</span> <span class="nav-text">树状数组常用操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、神奇的lowbit"><span class="nav-number">2.1.</span> <span class="nav-text">一、神奇的lowbit</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、单点修改"><span class="nav-number">2.2.</span> <span class="nav-text">二、单点修改</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、求和操作"><span class="nav-number">2.3.</span> <span class="nav-text">三、求和操作</span></a></li></ol></li></ol></div>
             
 
           </div>
