@@ -6,21 +6,35 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://millope.github.io">
-  <title>test1 | millope&#39;s blog</title>
+  <title>matlab-绘图 | millope&#39;s blog</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="hexo new “test1” hexo s">
+  <meta name="description" content="本文介绍matlab的基本画图方法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test1">
-<meta property="og:url" content="http://millope.github.io/2023/07/05/test1/index.html">
+<meta property="og:title" content="matlab-绘图">
+<meta property="og:url" content="http://millope.github.io/2023/07/05/matlab%E7%AC%94%E8%AE%B02-%E7%BB%98%E5%9B%BE/index.html">
 <meta property="og:site_name" content="millope&#39;s blog">
-<meta property="og:description" content="hexo new “test1” hexo s">
+<meta property="og:description" content="本文介绍matlab的基本画图方法">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212104623304.png">
+<meta property="og:image" content="c:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212105246674.png">
+<meta property="og:image" content="c:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212105753045.png">
+<meta property="og:image" content="c:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212110359347.png">
+<meta property="og:image" content="c:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212110538175.png">
+<meta property="og:image" content="c:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212111151414.png">
+<meta property="og:image" content="c:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212111307338.png">
+<meta property="og:image" content="c:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212171141622.png">
+<meta property="og:image" content="c:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211213090821230.png">
+<meta property="og:image" content="c:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211213091022518.png">
+<meta property="og:image" content="c:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211213091954737.png">
 <meta property="article:published_time" content="2023-07-05T01:21:58.000Z">
-<meta property="article:modified_time" content="2023-07-07T10:33:22.469Z">
+<meta property="article:modified_time" content="2023-07-07T10:43:14.242Z">
 <meta property="article:author" content="millope">
+<meta property="article:tag" content="matlab">
+<meta property="article:tag" content="plot">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212104623304.png">
   
     <link rel="alternative" href="/atom.xml" title="millope&#39;s blog" type="application/atom+xml">
   
@@ -211,14 +225,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-test1" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-matlab笔记2-绘图" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      test1
+      matlab-绘图
     </h1>
   
 
@@ -230,7 +244,7 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2023/07/05/test1/" class="archive-article-date">
+<a href="/2023/07/05/matlab%E7%AC%94%E8%AE%B02-%E7%BB%98%E5%9B%BE/" class="archive-article-date">
         <time datetime="2023-07-05T01:21:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-07-05</time>
 </a>
 
@@ -244,7 +258,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">5字</span>
+      <span class="post-count">919字</span>
     </span>
   </span>
 
@@ -253,7 +267,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">4分</span>
     </span>
   </span>
 </div>
@@ -264,8 +278,86 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>hexo new “test1”</p>
-<p>hexo s</p>
+    <h2 id="text-绘图方法"><a href="#text-绘图方法" class="headerlink" title="$\text{绘图方法}$"></a>$\text{绘图方法}$</h2><h3 id="基础作图"><a href="#基础作图" class="headerlink" title="基础作图"></a>基础作图</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">30</span>);</span><br><span class="line">y = <span class="built_in">sin</span>(x);</span><br><span class="line"><span class="built_in">plot</span>(x, y)</span><br><span class="line"><span class="comment">% 如果直接plot(y) 将以索引位置作为横坐标</span></span><br><span class="line"></span><br><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">30</span>)&#x27;;</span><br><span class="line">k = <span class="number">1</span>:<span class="number">3</span>;</span><br><span class="line">y = <span class="built_in">sin</span>(x)*k;</span><br><span class="line"><span class="built_in">plot</span>(x,y) </span><br><span class="line"><span class="comment">% 画出每一列数据对应的曲线</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212104623304.png" alt="image-20211212104623304"></p>
+<p><strong>绘制多条函数图像</strong></p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">30</span>);</span><br><span class="line"><span class="built_in">plot</span>(x, <span class="built_in">sin</span>(x), <span class="string">&#x27;r&#x27;</span>, x, <span class="built_in">cos</span>(x), <span class="string">&#x27;gO&#x27;</span>)</span><br><span class="line"><span class="comment">% plot(x, sin(x), &#x27;r&#x27;);</span></span><br><span class="line"><span class="comment">% hold on;</span></span><br><span class="line"><span class="comment">% plot(x, cos(x), &#x27;gO&#x27;)</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212105246674.png" alt="image-20211212105246674"></p>
+<p>通过’s’设置见上</p>
+<p>设置方法</p>
+<p>1. </p>
+   <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">30</span>);</span><br><span class="line">y1 = <span class="built_in">sin</span>(x);</span><br><span class="line">y2 = <span class="built_in">sin</span>(<span class="number">3</span>*x); </span><br><span class="line"><span class="built_in">plot</span>(x, y1, <span class="string">&#x27;k-o&#x27;</span>, x, y2, <span class="string">&#x27;r-d&#x27;</span>, <span class="string">&#x27;linewidth&#x27;</span>, <span class="number">3</span>, <span class="string">&#x27;markersize&#x27;</span>, <span class="number">10</span>)</span><br></pre></td></tr></table></figure>
+
+   <img src="C:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212105753045.png" alt="image-20211212105753045" style="zoom:50%;" />
+
+<p>2. </p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">30</span>);</span><br><span class="line">y1 = <span class="built_in">sin</span>(x);</span><br><span class="line">y2 = <span class="built_in">sin</span>(<span class="number">3</span>*x); </span><br><span class="line">a = <span class="built_in">plot</span>(x, y1, <span class="string">&#x27;k-o&#x27;</span>, x, y2, <span class="string">&#x27;r-d&#x27;</span>);</span><br><span class="line">set(a, <span class="string">&#x27;linewidth&#x27;</span>, <span class="number">3</span>, <span class="string">&#x27;markersize&#x27;</span>, <span class="number">10</span>);</span><br><span class="line">a(<span class="built_in">i</span>).Linewidth = <span class="number">5</span></span><br><span class="line"><span class="comment">% i 按plot中曲线的先后顺序从1开始计数</span></span><br><span class="line"><span class="comment">% Linewidth 注意大小写</span></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><img src="C:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212110359347.png" alt="image-20211212110359347"></li>
+</ol>
+<p><strong>标注</strong></p>
+<p><img src="C:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212110538175.png" alt="image-20211212110538175"></p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">30</span>);</span><br><span class="line">y1 = <span class="built_in">sin</span>(x);</span><br><span class="line">y2 = <span class="built_in">cos</span>(x); </span><br><span class="line"><span class="built_in">plot</span>(x, y1, <span class="string">&#x27;r&#x27;</span>, x, y2, <span class="string">&#x27;gO&#x27;</span>); </span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;sin(x)&#x27;</span>, <span class="string">&#x27;cos(x)&#x27;</span>); </span><br><span class="line">title(<span class="string">&quot;Figure&quot;</span>);</span><br><span class="line">axis([<span class="number">0</span>, <span class="number">6</span>, <span class="number">-1</span>, <span class="number">1</span>]);</span><br><span class="line">xlabel(<span class="string">&#x27;angle&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;f(angle)&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><strong>其他相关设置</strong></p>
+<p><img src="C:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212111151414.png" alt="image-20211212111151414"></p>
+<p><img src="C:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212111307338.png" alt="image-20211212111307338"></p>
+<h3 id="符号函数绘图"><a href="#符号函数绘图" class="headerlink" title="符号函数绘图"></a>符号函数绘图</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ezplot(f, [a, b]) <span class="comment">% 在区间[a, b] 绘制f的图像</span></span><br><span class="line">ezplot(x, y, [tmin, tmax]) <span class="comment">% 在[tmin, tmax] 区间绘制参数方程x(t), y(t)的图像</span></span><br><span class="line">fplot(f, [a, b]) <span class="comment">% 在[a, b]绘制图形 f可以是表达式或者函数</span></span><br><span class="line">fplot(@(x) <span class="number">2.</span>*x.*<span class="built_in">exp</span>(x), [<span class="number">1</span>, <span class="number">10</span>]) <span class="comment">% 新版作图</span></span><br><span class="line">polar(theta, r, s) <span class="comment">% 极坐标方程 theta为角度 r为半径 s控制</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="C:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211212171141622.png" alt="image-20211212171141622"></p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% 动态绘制摆线</span></span><br><span class="line">r = <span class="number">10</span>;</span><br><span class="line">t = <span class="built_in">linspace</span>(<span class="number">0</span>, <span class="number">2</span>*<span class="built_in">pi</span>, <span class="number">100</span>);</span><br><span class="line">X = r * (t - <span class="built_in">sin</span>(t)); </span><br><span class="line">Y = r * (<span class="number">1</span> - <span class="built_in">cos</span>(t)); </span><br><span class="line"><span class="keyword">for</span> k = <span class="number">1</span>:<span class="built_in">length</span>(t)</span><br><span class="line">    <span class="built_in">hold</span> off;</span><br><span class="line">    <span class="built_in">plot</span>(X(<span class="number">1</span>:k), Y(<span class="number">1</span>:k), <span class="string">&#x27;.&#x27;</span>, <span class="string">&#x27;LineWidth&#x27;</span>, <span class="number">3</span>); <span class="comment">% 绘制摆线 </span></span><br><span class="line">    x0 = X(k) + r * <span class="built_in">sin</span>(t(k)); </span><br><span class="line">    y0 = r; <span class="comment">% 圆心位置</span></span><br><span class="line">    x1 = x0 + r * <span class="built_in">cos</span>(t); </span><br><span class="line">    y1 = y0 + r * <span class="built_in">sin</span>(t); </span><br><span class="line">    <span class="built_in">hold</span> on; </span><br><span class="line">    <span class="built_in">plot</span>(x1, y1, <span class="string">&#x27;r&#x27;</span>, <span class="string">&#x27;LineWidth&#x27;</span>, <span class="number">3</span>); <span class="comment">% 绘制圆</span></span><br><span class="line">    axis equal; </span><br><span class="line">    axis([-r, (<span class="number">2</span>*<span class="built_in">pi</span>*r+r), <span class="number">0</span>, <span class="number">2</span> * r]); </span><br><span class="line">    set(gca, <span class="string">&#x27;fontsize&#x27;</span>, <span class="number">14</span>, <span class="string">&#x27;linewidth&#x27;</span>, <span class="number">3</span>);</span><br><span class="line">    pause(<span class="number">0.05</span>); </span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>三维曲线的绘制</strong></p>
+<p>1. </p>
+   <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">plot3</span>(x1, y1, z1, <span class="string">&#x27;s&#x27;</span>)</span><br><span class="line"></span><br><span class="line">t = <span class="number">0</span>:<span class="built_in">pi</span>/<span class="number">50</span>:<span class="number">10</span>*<span class="built_in">pi</span>; </span><br><span class="line"><span class="built_in">plot3</span>(<span class="built_in">sin</span>(t), <span class="built_in">cos</span>(t), t); </span><br></pre></td></tr></table></figure>
+
+<p>2. </p>
+   <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ezplot3(x, y, z, [t1, t2]); </span><br><span class="line">ezplot3(x, y, z, <span class="string">&#x27;animate&#x27;</span>) <span class="comment">% 产生动画轨迹</span></span><br><span class="line"></span><br><span class="line">syms t; </span><br><span class="line">x = t; y = <span class="built_in">sin</span>(t); z = <span class="built_in">sin</span>(<span class="number">2</span> * t); </span><br><span class="line">ezplot3(x, y, z, [<span class="number">0</span>, <span class="number">10</span>*<span class="built_in">pi</span>], <span class="string">&#x27;animate&#x27;</span>); </span><br></pre></td></tr></table></figure>
+
+<p><strong>三维曲面的绘制</strong></p>
+<ul>
+<li><p>二元函数$z&#x3D;f(x,y)$，其定义域为$[a,b] \times[c,d]$，则几何图像为空间坐标中的曲面</p>
+</li>
+<li><p>绘制步骤：</p>
+<p>1. </p>
+   <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = a:p1:b <span class="comment">% 按照步长p1对[a,b]区间划分并产生向量</span></span><br><span class="line">y = c:p2:b</span><br></pre></td></tr></table></figure>
+
+<p>2. </p>
+   <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[X, Y] = <span class="built_in">meshgrid</span>(x, y) <span class="comment">% 生成投影域上全部网络节点的坐标矩阵</span></span><br></pre></td></tr></table></figure>
+
+<p>3. </p>
+   <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Z = f(X, Y) <span class="comment">% 计算函数值</span></span><br></pre></td></tr></table></figure>
+
+<p>4. </p>
+   <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">% 绘制曲面</span></span><br><span class="line">mesh(X, Y, Z); <span class="comment">% 绘制网络曲面</span></span><br><span class="line">surf(X, Y, Z); <span class="comment">% 绘制光滑曲面</span></span><br><span class="line"></span><br><span class="line">x = <span class="number">-5</span>:<span class="number">0.5</span>:<span class="number">5</span>; </span><br><span class="line">y = x; </span><br><span class="line">[x, y] = <span class="built_in">meshgrid</span>(x, y); </span><br><span class="line">z = x.^<span class="number">2</span> + y.^<span class="number">2</span>; </span><br><span class="line">subplot(<span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>); mesh(x, y, z); <span class="comment">% 绘制网格图</span></span><br><span class="line">subplot(<span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>); surf(x, y, z); <span class="comment">% 绘制光滑表面图</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p><img src="C:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211213090821230.png" alt="image-20211213090821230"></p>
+</li>
+<li><p><img src="C:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211213091022518.png" alt="image-20211213091022518"></p>
+</li>
+<li><p>&#96;&#96;&#96;matlab<br>ezmesh(f) % 默认绘图区间[-2<em>pi, 2</em>pi, -2<em>pi, 2</em>pi]<br>ezsurf(f)</p>
+<p>ezmesh(f, [xmin, xmax, ymin, ymax])<br>ezsurf(f, [xmin, xmax, ymin, ymax])</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### 统计图的绘制</span><br><span class="line"></span><br><span class="line">1. **面积图**</span><br><span class="line"></span><br><span class="line">   ```matlab</span><br><span class="line">   x = 1:5; </span><br><span class="line">   y1 = [32 28, 43, 52, 42]; </span><br><span class="line">   y2 = [21 18, 30, 24, 29]; </span><br><span class="line">   area(x, y1, &#x27;facecolor&#x27;, [0, 0, 1], &#x27;edgecolor&#x27;, &#x27;g&#x27;);</span><br><span class="line">   hold on; </span><br><span class="line">   area(x, y2, &#x27;facecolor&#x27;, [0, 1, 0], &#x27;edgecolor&#x27;, &#x27;b&#x27;); </span><br><span class="line">   gtext(&quot;生产量&quot;); </span><br><span class="line">   gtext(&quot;利润量&quot;); % 鼠标选位标注</span><br></pre></td></tr></table></figure>
+
+ <img src="C:\Users\msm\AppData\Roaming\Typora\typora-user-images\image-20211213091954737.png" alt="image-20211213091954737" style="zoom:50%;" /></li>
+</ul>
+<ol start="2">
+<li><p><strong>直方图</strong></p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">y = <span class="built_in">randn</span>(<span class="number">10000</span>, <span class="number">1</span>);</span><br><span class="line"><span class="comment">% 产生10000个均值为0 方差为1的正态分布向量</span></span><br><span class="line">hist(y, <span class="number">20</span>); </span><br><span class="line"><span class="comment">% y为绘制数据 后为绘制分段个数</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>等高线</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">contour(z, n) %绘制z矩阵的的等高线图</span><br><span class="line">coutour3(Z, n) %3维的</span><br><span class="line">surfc(x, y, z)</span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p><strong>饼状图</strong></p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">pie(x)</span><br><span class="line">pie3(x)</span><br><span class="line">pie3(x, [<span class="number">0</span>, <span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>]) <span class="comment">% 抽出第三块</span></span><br></pre></td></tr></table></figure></li>
+</ol>
 
     
 
@@ -280,7 +372,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://millope.github.io/2023/07/05/test1/" title="test1" target="_blank">http://millope.github.io/2023/07/05/test1/</a>
+          <a href="http://millope.github.io/2023/07/05/matlab笔记2-绘图/" title="matlab-绘图" target="_blank">http://millope.github.io/2023/07/05/matlab笔记2-绘图/</a>
         </li>
         
         <li>
@@ -297,13 +389,28 @@
   <div class="article-info article-info-index">
     
     
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">matlab</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">plot</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/hexo介绍//" class="article-tag-list-link color2">hexo介绍</a>
+        			<a href="/categories/matlab//" class="article-tag-list-link color2">matlab</a>
         		</li>
       		
 		</ul>
@@ -358,7 +465,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://millope.github.io/2023/07/05/test1/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://millope.github.io/2023/07/05/matlab%E7%AC%94%E8%AE%B02-%E7%BB%98%E5%9B%BE/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -373,11 +480,15 @@
 
 <nav id="article-nav">
   
-  
-    <a href="/2023/07/05/matlab%E7%AC%94%E8%AE%B02-%E7%BB%98%E5%9B%BE/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">matlab-绘图</div>
-      <i class="icon-circle-right"></i>
+    <a href="/2023/07/05/test1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          test1
+        
+      </div>
     </a>
+  
   
 </nav>
 
